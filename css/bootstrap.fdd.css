@@ -10,6 +10,11 @@ body{
 	margin:0;
 	position: relative;
 	background: white;
+	margin-top: 80px;  /* make room for the nav bar*/
+}
+
+.row {
+	display: flex;
 }
 
 listlink {
@@ -22,18 +27,65 @@ listlink {
 	margin-bottom: 5px;
 }
 
-.bildli {
-	height: 40px;
-	margin-bottom: 10px;
+.next-concert {
+    font-size: 2.75em;
+}
+
+.next-concert a {
+  color: black;
+}
+
+.next-concert a:hover {
+  color: hotpink;
 }
 
 .konzertdaten {
 	margin-top: 5px;
 	margin-bottom: 5px;
+	font-size: 1.5em;
 }
 
-.row {
-	display: flex;
+.konzertdaten a {
+  color: black;
+}
+
+.konzertdaten a:hover {
+  color: hotpink;
+}
+
+.jumbo-title {
+    padding-top: 100px;
+    margin-top: -80px;
+}
+
+.nav-item {
+    padding: 2px;
+}
+
+@media (min-width: 576px) {
+    .navbar .navbar-brand img {
+        position: relative;
+        width: 320px;
+    }
+    .bildli {
+	    height: 28px;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar .navbar-brand img {
+        position: relative;
+        width: 240px;
+    }
+
+    .bildli {
+        height: 12px;
+    }
+
+    .jumbotron {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
 
 /*######################### Bootstrap ##############################*/
@@ -3435,7 +3487,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 }
 .nav .open>a,.nav .open>a:focus,.nav .open>a:hover{
 	background-color:none;
-	border-color:none
+	border-colonav-itemr:none
 }
 .nav .nav-divider{
 	height:1px;

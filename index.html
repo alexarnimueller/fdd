@@ -7,28 +7,28 @@
     <meta name="Title" CONTENT="Freunde des Dschungels - FdD - Z&uuml;rich">
     <meta name="Robots" CONTENT="INDEX,FOLLOW">
     <meta name="keywords" content="FdD, Freunde, Zurich, Z&uuml;rich, Rap'n'Roll, Live Music, Musik, Funk"/>
-    <meta name="description" content="Freunde des Dschungels - Rap'N'Roll"/>
+    <meta name="description" content="Freunde des Dschungels - Rap'N'Roll aus Z&uuml;rich"/>
     <link rel="stylesheet" href="css/bootstrap.fdd.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 <!-- Nav Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" width="200"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menue" aria-controls="menue" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand mb-2" id="navbar-fdd-logo" href="#"><img src="images/logo_fdd.png" alt="" width="300"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menue"
+                aria-controls="menue" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleLogo();">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="menue">
-            <ul class="nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a data-toggle="collapse" data-target="navbar-collapse" href="#home"><img src="" alt="" height="28"></a></li>
-                <li class="nav-item"><a href="#band"><img src="images/band.png" alt="" height="28"></a></li>
-                <li class="nav-item"><a href="#media"><img src="images/media.png" alt="" height="28"></a></li>
-                <li class="nav-item"><a href="#konzerte"><img src="images/konzerte.png" alt="" height="28"></a></li>
-                <li class="nav-item"><a href="#kontakt"><img src="images/kontakt.png" alt="" height="28"></a></li>
+            <ul class="nav">
+                <li class="nav-item"><a href="#band"><img class="bildli" src="images/band.png" alt=""></a></li>
+                <li class="nav-item"><a href="#media"><img class="bildli" src="images/media.png" alt=""></a></li>
+                <li class="nav-item"><a href="#konzerte"><img class="bildli" src="images/konzerte.png" alt=""></a></li>
+                <li class="nav-item"><a href="#kontakt"><img class="bildli" src="images/kontakt.png" alt=""></a></li>
             </ul>
         </div>
     </div>
@@ -42,12 +42,12 @@
         <div class="jumbotron" id="home">
             <img class="img-responsive" src="images/home.jpg">
             <h1>Nächstes Konzert:</h1>
-            <h3>bald mal wieder</h3>
+            <h2 class="next-concert">EP Plattentaufe am <a href="https://www.helsinkiklub.ch/" target="_blank">Freitag 3. Juni im Helsinki Klub</a> in Zürich</h2>
         </div>
 
         <!-- Band -->
-        <div class="jumbotron" id="band">
-            <h1><img src="images/band.png" alt="" height="40px"></h1>
+        <div class="jumbotron">
+            <h1  class="jumbo-title" id="band"><img src="images/band.png" alt="" height="40px"></h1>
             <h2>Freunde des Dschungels: Eine Liebe namens Rap'n'Roll</h2>
             <p>Das läuft nun schon ein Weilchen so, dass Rap mit Rock'n'Roll ins Bett geht. Die Freunde des
                 Dschungels sind überzeugt, dass es nicht bei der Affäre bleibt. Denn sie finden, dass die beiden gut
@@ -60,28 +60,14 @@
         </div>
 
         <!-- Media -->
-        <div class="jumbotron" id="media">
-            <h1><img height="40px" src="images/media.png"></h1>
-                <div><img height="20px" src="images/musik.png"></div>
-                <br>
-                <h4>Mosaik - Festivalsong PFF 2019</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bolKNT1PuSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <br><br>
-                <iframe width="90%" height="100" scrolling="no" frameborder="no"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/157645527&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
-                <br><br>
-                <iframe width="90%" height="100" scrolling="no" frameborder="no"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/157645525&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
-                <br><br>
-                <iframe width="90%" height="100" scrolling="no" frameborder="no"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/157645523&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
-                <br><br>
-                <iframe width="90%" height="400" scrolling="no" frameborder="no"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/15685443&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
-                <br><br>
+        <div class="jumbotron">
+            <h1 class="jumbo-title" id="media"><img height="40px" src="images/media.png"></h1>
+            <div class="my-4"><img height="20px" src="images/musik.png"></div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3cgUGXrZ3Z38b8NANdXM52?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <br><br>
 
             <!-- Bilder -->
-            <div><img height="20px" src="images/bilder.png"><br><br></div>
+            <div class="my-4"><img height="20px" src="images/bilder.png"><br><br></div>
             <div class="row">
                 <div class="col-xs-12 col-md-6">
                     <a href="images/gigs/fddart.png" class="thumbnail"><img src="images/gigs/fddart.png"
@@ -129,32 +115,36 @@
         </div>
 
         <!-- Konzerte -->
-        <div class="jumbotron" id="konzerte">
-            <h1><img src="images/konzerte.png" alt="" height="40px"></h1>
+        <div class="jumbotron">
+            <h1 class="jumbo-title" id="konzerte"><img src="images/konzerte.png" alt="" height="40px"></h1>
             <br>
-            <img src="images/zukunft.png" alt="" height="20">
-            <h4>2020</h4>
-            <br><br>
-            <img src="images/vergangenheit.png" alt="" height="20">
-            <h4>2020</h4>
+            <img class="my-4" src="images/zukunft.png" alt="" height="20">
+            <h3>2022</h3>
+            <div class="konzertdaten">03.06.: <a href="https://www.helsinkiklub.ch/" target="_blank">Helsinki</a>, Zürich; Plattentaufe der neuen EP!</div>
+            <br>
+            <img class="my-4" src="images/vergangenheit.png" alt="" height="20">
+            <h3>2021</h3>
+            <div class="konzertdaten">Corona Pause</div>
+            <br>
+            <h3>2020</h3>
             <div class="konzertdaten">25.01.: Fabrikbeiz, Wädenswil</div>
             <br>
-            <h4>2019</h4>
+            <h3>2019</h3>
             <div class="konzertdaten">02.11.: Halloween goes Space @ Chateau Tièche Zürich</div>
             <div class="konzertdaten">31.08.: Pfadi Folk Fest (PFF), Stäfa</div>
             <div class="konzertdaten">04.05.: 1. Mai Fest, Kasernen-Areal Zürich</div>
             <br>
-            <h4>2018</h4>
+            <h3>2018</h3>
             <div class="konzertdaten">Kreative Band-Pause</div>
             <br>
-            <h4>2017</h4>
+            <h3>2017</h3>
             <div class="konzertdaten">23.09.: Kultur Bahnhof Affoltern (KuBaA)</div>
             <div class="konzertdaten">27.05.: After-StuTS Party im Umbo, Zürich</div>
             <div class="konzertdaten">24.05.: Frackwoche ZHAW, Winterthur</div>
             <div class="konzertdaten">18.03.: Live im Bundeshaus zu Wiedikon, Zürich
             </div>
             <br>
-            <h4>2016</h4>
+            <h3>2016</h3>
 
             <div class="konzertdaten">28.10.: Halloween goes Ritter & Burgen @ Chateau Tièche Zürich
             </div>
@@ -163,26 +153,26 @@
             <div class="konzertdaten">20.03.: Live im Bundeshaus zu Wiedikon, Zürich
             </div>
             <br>
-            <h4>2015</h4>
+            <h3>2015</h3>
             <div class="konzertdaten">11.12.: ZS Party, Provitreff Zürich</div>
             <div class="konzertdaten">28.11.: Hausfest in der Schreinerei an der Langstrasse 115</div>
             <div class="konzertdaten">31.10.: Halloween goes Circus @ Chateau Tièche Zürich</div>
-            <div class="konzertdaten">12.09.: 750-Jahre Richterswil</div>
+            <div class="konzertdaten">12.09.: 750-Jahre Richterswil</div>
             <div class="konzertdaten">10.09.: Live vor dem FREITAG-Store Zürich</div>
-            <div class="konzertdaten">22.08.: Röntgenplatzfest Zürich</div>
-            <div class="konzertdaten">29.03.: Live im Bundeshaus zu Wiedikon</div>
+            <div class="konzertdaten">22.08.: Röntgenplatzfest Zürich</div>
+            <div class="konzertdaten">29.03.: Live im Bundeshaus zu Wiedikon</div>
             <div class="konzertdaten">14.03.: Live vor dem FREITAG-Store Davos</div>
             <br>
-            <h4>2014</h4>
-            <div class="konzertdaten">26.11.: Alte Kaserne; Support für Eskorzo (ESP)</div>
-            <div class="konzertdaten">27.10.: Restaurant Alpenrose, Zürich; Dschungelmenu + Dschungelmusik. Ein
+            <h3>2014</h3>
+            <div class="konzertdaten">26.11.: Alte Kaserne; Support für Eskorzo (ESP)</div>
+            <div class="konzertdaten">27.10.: Restaurant Alpenrose, Zürich; Dschungelmenu + Dschungelmusik. Ein
                 Abend in 3 Sets
             </div>
-            <div class="konzertdaten">23.05.: Provitreff, Zürich; ZS-Party mit EKR & Freunde des Dschungels</div>
+            <div class="konzertdaten">23.05.: Provitreff, Zürich; ZS-Party mit EKR & Freunde des Dschungels</div>
             <div class="konzertdaten">12.04.: Club Industrie, Wädenswil; 6 Jahre LB-Drums</div>
-            <div class="konzertdaten">10.05.: See la vie, Horgen; JoJo & Freunde des Dschungels</div>
+            <div class="konzertdaten">10.05.: See la vie, Horgen; JoJo & Freunde des Dschungels</div>
             <br>
-            <h4>2013</h4>
+            <h3>2013</h3>
             <div class="konzertdaten">10.08.: Beach Sound Openair, Stäfa</div>
             <div class="konzertdaten">07.09.: Auras-Party, Dorffäscht, Richterswil</div>
             <div class="konzertdaten">28.09.: Alte Kaserne, Zürich</div>
@@ -191,8 +181,8 @@
         </div>
 
         <!-- Kontakt -->
-        <div class="jumbotron" id="kontakt">
-            <h1><img src="images/kontakt.png" alt="" height="40px"></h1>
+        <div class="jumbotron">
+            <h1 class="jumbo-title" id="kontakt"><img src="images/kontakt.png" alt="" height="40px"></h1>
             <br>
             <h3>Booking:</h3>
             <a href="mailto:info@freundedesdschungels.ch"><img src="images/mail.png" height="40px"><span
@@ -200,50 +190,68 @@
             <a href="mailto:info@freundedesdschungels.ch"><img src="images/fb.png" height="40px"><span
                     class="badge"> facebook.com/freundedesdschungels</span></a><br><br>
             <h3>Musik kaufen:</h3>
-            <p>iGroove</p>
-            <div class="igroove-artist-widget" data-id="72911" data-width="200" data-height="200"></div>
-            <script type="text/javascript">
-                (function () {
-                    var ip = document.createElement('script');
-                    ip.type = 'text/javascript';
-                    ip.async = true;
-                    ip.src = 'https://app.igroovenext.com/release-widget/generate.js';
-                    var s = document.getElementsByTagName('script')[0];
-                    s.parentNode.insertBefore(ip, s);
-                })();
-            </script>
-            <br>
-            <p>Bandcamp</p>
-            <a href="https://freundedesdschungels.bandcamp.com/releases" target="_blank" alt="Bandcamp"><img
-                    src="images/home_s.png" height="200"></a>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <p>iGroove</p>
+                    <div class="igroove-artist-widget" data-id="72911" data-width="200" data-height="200"></div>
+                    <script type="text/javascript">
+                        (function () {
+                            var ip = document.createElement('script');
+                            ip.type = 'text/javascript';
+                            ip.async = true;
+                            ip.src = 'https://app.igroovenext.com/release-widget/generate.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(ip, s);
+                        })();
+                    </script>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <p>Bandcamp</p>
+                    <a href="https://freundedesdschungels.bandcamp.com/releases" target="_blank" alt="Bandcamp">
+                        <img class="img-fluid" style="max-width: 200px;" src="images/home_s.png">
+                    </a>
+                </div>
+            </div>
         </div>
 
         <!-- Footer -->
         <div class="well" align="center">
-            <div class="col-xs-2"><a href="https://plus.google.com/116671037210801488088/about" target="_blank"><img
-                    src="images/google.png" alt="" height="40px"></a></div>
-            <div class="col-xs-2"><a href="https://www.facebook.com/freundedesdschungels/" target="_blank"><img
-                    src="images/facebook.png" alt="" height="40px"></a></div>
-            <div class="col-xs-2"><a href="https://soundcloud.com/freunde-des-dschungels" target="_blank"><img
-                    src="images/soundcloud.png" alt="" height="45px"></a></div>
-            <div class="col-xs-2"><a href="https://www.youtube.com/channel/UCmg6Ournh8nPgz3QFbB8xdg"
-                                     target="_blank"><img src="images/youtube.png" alt="" height="47px"></a></div>
-            <div class="col-xs-2"><a href="http://www.bandweb.ch/band/3984/freunde-des-dschungels"
-                                     target="_blank"><img src="images/bandweb.png" alt="" height="40px"></a></div>
-            <br><br><br>
-            Copyright 2022 - Freunde des Dschungels
+            <div class="row">
+                <div class="col"><a href="https://open.spotify.com/artist/3cgUGXrZ3Z38b8NANdXM52?si=62tpC7l0QgyyVrCEYI5GYQ" target="_blank"><img
+                        src="images/spotify.png" alt="" height="45px"></a></div>
+                <div class="col"><a href="https://www.facebook.com/freundedesdschungels/" target="_blank"><img
+                        src="images/facebook.png" alt="" height="40px"></a></div>
+                <div class="col"><a href="https://soundcloud.com/freunde-des-dschungels" target="_blank"><img
+                        src="images/soundcloud.png" alt="" height="45px"></a></div>
+                <div class="col"><a href="https://www.youtube.com/channel/UCmg6Ournh8nPgz3QFbB8xdg"
+                                         target="_blank"><img src="images/youtube.png" alt="" height="45px"></a></div>
+                <div class="col"><a href="https://freundedesdschungels.bandcamp.com"
+                                         target="_blank"><img src="images/bandcamp.png" alt="" height="40px"></a></div>
+            </div>
+            <div class="row">
+                <span class="mt-3">&copy; 2022 - Freunde des Dschungels</span>
+            </div>
         </div>
     </div>
 </div>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+function toggleLogo() {
+  var x = document.getElementById("navbar-fdd-logo");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-  ga('create', 'UA-104378372-3', 'auto');
-  ga('send', 'pageview');
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-104378372-3', 'auto');
+ga('send', 'pageview');
 </script>
 
 </body>
