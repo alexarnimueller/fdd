@@ -1,3 +1,7 @@
-
+.DS_Store
 emaildatenFdD.txt
 .idea/
+fonts/.*
+css/.*
+images/.*
+js/.*
